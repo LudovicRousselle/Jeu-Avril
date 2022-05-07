@@ -4,19 +4,30 @@ using UnityEngine;
 
 public class CapitalChack : MonoBehaviour
 {
+    [SerializeField] GameObject text;
+    [SerializeField] AudioSource audioWin;
 
-    GameObject capitalListReference;
-
-
-    // Start is called before the first frame update
     void Start()
     {
-        capitalListReference = GetComponent<List>()
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        UiCapitale uiCapitale = text.GetComponent<UiCapitale>();
+
+        if (Input.GetMouseButton(0))
+        {
+            Debug.Log("click");
+
+
+            if (uiCapitale.capitalChose == gameObject.name)
+            {
+                Debug.Log("truc");
+            }
+        }
+
+
+
     }
 }

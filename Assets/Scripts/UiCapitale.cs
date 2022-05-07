@@ -7,13 +7,13 @@ public class UiCapitale : MonoBehaviour
 {
 
     [SerializeField] Text txt;
-    [SerializeField] List<string> capitalList = new List<string>();
-
+    [SerializeField] public List<string> capitalList = new List<string>();
+    public string capitalChose;
 
     // Start is called before the first frame update
     void Start()
     {
-        string capitalChose = capitalList[Random.Range(0, capitalList.Count - 1)];
+        capitalChose = capitalList[Random.Range(0, capitalList.Count - 1)];
         txt = gameObject.GetComponent<Text>();
         txt.text = capitalChose;
     }

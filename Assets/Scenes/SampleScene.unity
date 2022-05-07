@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.13296545, g: 0.19145328, b: 0.33962262, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 0ffaa0b7117ba8c47a9d05ae701d4b4d, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 1419c4603304ddf408d052896882c19f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.015339257, g: 0.03879478, b: 0.10587631, a: 1}
+  m_IndirectSpecularColor: {r: 0.34808886, g: 0.009195267, b: 0.040893737, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 9c1fe46eee9a2e14c99ccf919a81d1ef, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 477cc4148fad3449482a3bc3178594e2, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -224,6 +224,7 @@ MonoBehaviour:
   - Rome
   - Bucharest
   - Stockholm
+  capitalChose: 
 --- !u!1 &276432852
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +304,7 @@ GameObject:
   - component: {fileID: 371921017}
   - component: {fileID: 371921016}
   - component: {fileID: 371921015}
+  - component: {fileID: 371921019}
   m_Layer: 0
   m_Name: Kiev
   m_TagString: Untagged
@@ -399,6 +401,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371921013}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &371921019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371921013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7273f699945b834cac1843d5d50bcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 81682468}
+  audioWin: {fileID: 1393962558}
 --- !u!1 &653260035
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +576,7 @@ GameObject:
   - component: {fileID: 960584455}
   - component: {fileID: 960584454}
   - component: {fileID: 960584453}
+  - component: {fileID: 960584457}
   m_Layer: 0
   m_Name: Stockolm
   m_TagString: Untagged
@@ -656,6 +673,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960584451}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &960584457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960584451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7273f699945b834cac1843d5d50bcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 81682468}
+  audioWin: {fileID: 1393962558}
 --- !u!1 &967214690
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +827,7 @@ GameObject:
   - component: {fileID: 1093169947}
   - component: {fileID: 1093169946}
   - component: {fileID: 1093169949}
+  - component: {fileID: 1093169950}
   m_Layer: 0
   m_Name: Londre
   m_TagString: Untagged
@@ -892,6 +924,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMouseOver: {fileID: 967214691}
+--- !u!114 &1093169950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093169944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7273f699945b834cac1843d5d50bcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 81682468}
+  audioWin: {fileID: 1393962558}
 --- !u!1 &1269808951
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +951,7 @@ GameObject:
   - component: {fileID: 1269808954}
   - component: {fileID: 1269808953}
   - component: {fileID: 1269808956}
+  - component: {fileID: 1269808957}
   m_Layer: 0
   m_Name: Paris
   m_TagString: Untagged
@@ -1001,6 +1048,147 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMouseOver: {fileID: 967214691}
+--- !u!114 &1269808957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269808951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7273f699945b834cac1843d5d50bcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 81682468}
+  audioWin: {fileID: 1393962558}
+--- !u!1 &1393962557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393962559}
+  - component: {fileID: 1393962558}
+  m_Layer: 0
+  m_Name: Audio Win
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1393962558
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393962557}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1ff00ca828b8e884d9893c2b9d5a9b2a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1393962559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393962557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.2424636, y: 4.631852, z: 7.894093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1442209300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1202,7 @@ GameObject:
   - component: {fileID: 1442209303}
   - component: {fileID: 1442209302}
   - component: {fileID: 1442209305}
+  - component: {fileID: 1442209306}
   m_Layer: 0
   m_Name: Madrid
   m_TagString: Untagged
@@ -1110,6 +1299,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMouseOver: {fileID: 967214691}
+--- !u!114 &1442209306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442209300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7273f699945b834cac1843d5d50bcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 81682468}
+  audioWin: {fileID: 1393962558}
 --- !u!1 &1687258581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,6 +1485,7 @@ GameObject:
   - component: {fileID: 1689791234}
   - component: {fileID: 1689791233}
   - component: {fileID: 1689791232}
+  - component: {fileID: 1689791236}
   m_Layer: 0
   m_Name: Bucharest
   m_TagString: Untagged
@@ -1378,6 +1582,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689791230}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1689791236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689791230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7273f699945b834cac1843d5d50bcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 81682468}
+  audioWin: {fileID: 1393962558}
 --- !u!1001 &1877727626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1497,6 +1715,7 @@ GameObject:
   - component: {fileID: 2056377091}
   - component: {fileID: 2056377090}
   - component: {fileID: 2056377089}
+  - component: {fileID: 2056377093}
   m_Layer: 0
   m_Name: Rome
   m_TagString: Untagged
@@ -1593,6 +1812,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056377087}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2056377093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056377087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7273f699945b834cac1843d5d50bcf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 81682468}
+  audioWin: {fileID: 1393962558}
 --- !u!1 &2138677391
 GameObject:
   m_ObjectHideFlags: 0
