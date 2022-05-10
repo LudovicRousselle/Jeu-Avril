@@ -3,7 +3,36 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Paris
+  - Londre
+  - Madrid
+  - Kiev
+  - Rome
+  - Bucharest
+  - Stockholm
+  - Rabat
+  - Alger
+  - Tunis
+  - Tripoli
+  - Riyad
+  - Ankara
+  - "Ath\xE8ne"
+  - Sofia
+  - Bagdad
+  - Le Caire
+  - New Delhi
+  - Dacca
+  - "P\xE9kin"
+  - Tokyo
+  - Moscou
+  - Prague
+  - Varsovie
+  - Berlin
+  - Berne
+  - Budapest
+  - Bratislava
+  - Vienne
   layers:
   - Default
   - TransparentFX
